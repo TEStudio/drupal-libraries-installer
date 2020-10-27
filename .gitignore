@@ -1,2 +1,3 @@
 # composer artifacts
 /vendor/
+composer.lock

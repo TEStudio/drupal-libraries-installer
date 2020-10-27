@@ -7,19 +7,23 @@
         {
             "name": "Stephen Beemsterboer",
             "homepage": "https://github.com/balbuf"
+        },
+        {
+            "name": "Vladimir Roudakov",
+            "homepage": "https://github.com/balbuf"
         }
     ],
     "support": {
-        "issues": "https://github.com/balbuf/drupal-libraries-installer/issues"
+        "issues": "https://github.com/testudio/drupal-libraries-installer/issues"
     },
     "autoload": {
-        "psr-4": {"BalBuf\\DrupalLibrariesInstaller\\": "src/"}
+        "psr-4": {"DrupalLibrariesInstaller\\": "src/"}
     },
     "extra": {
-        "class": "BalBuf\\DrupalLibrariesInstaller\\Plugin"
+        "class": "DrupalLibrariesInstaller\\Plugin"
     },
     "require": {
-        "composer-plugin-api": "^1.0",
+        "composer-plugin-api": "^1.0 | ^2.0",
         "composer/installers": "^1.1"
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace BalBuf\DrupalLibrariesInstaller;
+namespace DrupalLibrariesInstaller;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
@@ -24,6 +24,12 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
     // no activation steps required
   }
 
+  public function deactivate(Composer $composer, IOInterface $io) {
+  }
+
+  public function uninstall(Composer $composer, IOInterface $io) {
+  }
+
   /**
    * Instruct the plugin manager to subscribe us to these events.
    */
@@ -36,7 +42,8 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
 
   /**
    * Upon running composer install or update, install the drupal libraries.
-   * @param  Event  $event install/update event
+   *
+   * @param Event $event install/update event
    */
   public function install(Event $event) {
     // get composer object
